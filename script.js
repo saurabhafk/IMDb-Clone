@@ -67,8 +67,8 @@ const loadMovieDetails = () => {
             searchList.classList.add('hide-search-list'); //Add CSS
             movieSearchBox.value = ""; //Reset search box
             localStorage.setItem('movieID',movie.dataset.id); // Set movie id to localstorage for later use
-            let dir = window.location.origin + "/IMDb-Clone/result/resultPage.html"; // Custom URL for result page
-            window.location.href = "https://github.com/saurabhafk/IMDb-Clone/result/resultPage.html"; //Redirect to a new page
+            let dir = window.location.origin + "/XMDB/result/resultPage.html"; // Custom URL for result page
+            window.location.href = "result/resultPage.html"; //Redirect to a new page
         })
     })
 }
