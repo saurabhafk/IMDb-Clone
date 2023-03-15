@@ -9,7 +9,7 @@ if(!localStorage.getItem('favMovies')){
 }
 // Load movies from API
 async function loadMovies(searchTerm) {
-    const URL = `http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=dce58907`; //Base URL
+    const URL = `http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=755f786c`; //Base URL
     const res = await fetch(`${URL}`); //Fetch data from server
     const data = await res.json(); //Arrange data to readable format (JSON)
     // Check if everything is Okay
@@ -67,8 +67,8 @@ const loadMovieDetails = () => {
             searchList.classList.add('hide-search-list'); //Add CSS
             movieSearchBox.value = ""; //Reset search box
             localStorage.setItem('movieID',movie.dataset.id); // Set movie id to localstorage for later use
-            let dir = window.location.origin + "/XMDB/result/resultPage.html"; // Custom URL for result page
-            window.location.href = "result/resultPage.html"; //Redirect to a new page
+            let dir = window.location.origin + "/IMDb-Clone/result/resultPage.html"; // Custom URL for result page
+            window.location.href = "https://saurabhafk.github.io/IMDb-Clone/result/resultPage.html"; //Redirect to a new page
         })
     })
 }
