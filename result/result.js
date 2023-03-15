@@ -29,7 +29,7 @@ const displayMovieDetails = (details) => {
 }
 // Load only clicked movie detail
 async function getData(movieID) {
-    const result = await fetch(`http://www.omdbapi.com/?i=${movieID}&apikey=dce58907`); //Base URL
+    const result = await fetch(`http://www.omdbapi.com/?i=${movieID}&apikey=755f786c`); //Base URL
     const movieDetails = await result.json(); //Movie Details from server
     displayMovieDetails(movieDetails); //Display the movie
 }
