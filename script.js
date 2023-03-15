@@ -67,7 +67,7 @@ const loadMovieDetails = () => {
             searchList.classList.add('hide-search-list'); //Add CSS
             movieSearchBox.value = ""; //Reset search box
             localStorage.setItem('movieID',movie.dataset.id); // Set movie id to localstorage for later use
-            let dir = window.location.origin + "/XMDB/result/resultPage.html"; // Custom URL for result page
+            let dir = window.location.origin + "result/resultPage.html"; // Custom URL for result page
             window.location.href = "result/resultPage.html"; //Redirect to a new page
         })
     })
