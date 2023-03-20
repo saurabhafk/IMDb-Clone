@@ -9,7 +9,7 @@ if(!localStorage.getItem('favMovies')){
 }
 // Load movies from API
 async function loadMovies(searchTerm) {
-    const URL = `http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=dce58907`; //Base URL
+    const URL = `http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=dcc7d36`; //Base URL
     const res = await fetch(`${URL}`); //Fetch data from server
     const data = await res.json(); //Arrange data to readable format (JSON)
     // Check if everything is Okay
